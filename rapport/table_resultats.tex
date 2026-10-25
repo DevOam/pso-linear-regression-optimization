@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\small
+\caption{Comparaison sur le partage principal : moyennes et écarts-types de 20 exécutions. Erreurs en $10^4$ TWD par ping. OLS, gradient et moyenne sont déterministes ; leurs répétitions servent au chronométrage.}
+\label{tab:resultats}
+\begin{tabular}{lrrrrr}\toprule
+Méthode & RMSE & Écart-type RMSE & MAE & $R^2$ & Temps moyen (ms)\\\midrule
+Moyenne & 12,4216 & 0 & 9,5698 & -0,0000 & 0,000\\
+Recherche aléatoire & 23,5020 & 3,6343 & 18,5251 & -2,6612 & 124,537\\
+Gradient & 8,2099 & 0 & 6,1620 & 0,5632 & 6,314\\
+PSO & 8,2099 & $<10^{-6}$ & 6,1620 & 0,5632 & 283,532\\
+Moindres carrés & 8,2099 & 0 & 6,1620 & 0,5632 & 0,046\\
+\bottomrule
+\end{tabular}
+\end{table*}
